@@ -1,60 +1,65 @@
-public class day7 {
 /*
-    class request {
+public class day8 Interface{
+    interface Employee {
+        void solveProblem();
+        void work();
+    }
+    static class BankEmployee implements Employee
+    {
         String name;
-        String date;
-        String reason;
-        requset (String name,String date,String reason ){
-            this.name=name;
-            this.date=date;
-            this.reason=reason;
+        int id;
+        int salary;
+        BankEmployee(String name, String id, int salary)
+         {
+            this.name = name;
+            this.id = id;
+            this.salary = salary;
         }
-        void approve() {
-        }
-        void reject() {
-            System.out.println("leave request approved");
-        }
-        static class Loanrequest extends
-        }
-        }
-
-    }
- */
-
-
-    static class payment{
-        int amount;
-        void transfer(){
-            System.out.println("bob");
-        }
-    }
-    static class upipayment extends payment{
         @Override
-        void transfer(){
-            System.out.println("transfer the amount");
+        public void solveProblem()
+        {
+            System.out.println(name + " is solving banking problems");
         }
-    }
-    static class cardpayment extends payment{
         @Override
-        void transfer(){
-            System.out.println("easy transfer");
+        public void work()
+        {
+            System.out.println(name + " is working in the bank");
         }
     }
-    static class nbpayment extends payment{
+    static class CheckingEmployee implements Employee
+    {
+        String name;
+        int id;
+        int salary;
+        CheckingEmployee(String name, int  id, int salary)
+        {
+            this.name = name;
+            this.id = id;
+            this.salary = salary;
+        }
         @Override
-        void transfer(){
-            System.out.println("easy way to transfer");
+        public void solveProblem()
+        {
+            System.out.println(name + " is checking customer accounts");
+        }
+        @Override
+        public void work() {
+            System.out.println(name + " is performing checking operations");
         }
     }
-    static void main() {
-        upipayment upipayment = new upipayment();
-        upipayment.transfer();
-
-        cardpayment cardpayment = new cardpayment();
-        cardpayment.transfer();
-
-        nbpayment nbppayment = new nbpayment();
-        nbppayment.transfer();
+    public static void main(String[] args)
+    {
+        Employee emp1 = new BankEmployee("divya", "B101", 50000);
+        Employee emp2 = new CheckingEmployee("sri", "C102", 45000);
+        System.out.println(" ");
+        emp1.work();
+        System.out.println();
+        emp1.solveProblem();
+        System.out.println(" ");
+        emp2.work();
+        System.out.println();
+        emp2.solveProblem();
+        System.out.println();
     }
 }
-
+ */

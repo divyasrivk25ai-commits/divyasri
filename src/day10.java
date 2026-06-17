@@ -73,8 +73,7 @@ public class day10 {
         }
     }
 */
-import java.util.LinkedList;
-
+/*
 public class day10 {
     static void process(LinkedList<String> list) {
         System.out.println("Removed : " + list.removeFirst());
@@ -98,5 +97,32 @@ public class day10 {
         System.out.println("\nAfter Updating:");
         System.out.println(list);
     }
-}
+*/
+ /*
+     public class day10 {
+        static void main() {
+                String name = "divi";
+                try {
+                    System.out.println(name.charAt(0));
+                    System.out.println(45/0);
+                }
+                catch(ArithmeticException e) {
+                    System.out.println("Arithmetic Exception");
+                }
+                catch(ArrayIndexOutOfBoundsException e) {
+                    System.out.println("Array Index Out OfBounds Exception");
+                }
+                catch (Exception e) {
+                    System.out.println("Exception");
+                }
+                finally {
+                    System.out.println("This will always execute");
+                    name="divi";
+                }
+                System.out.println("Still running");
+                System.out.println("Name :"+name);
+            }
+        }
+
+  */
 

@@ -16,6 +16,7 @@ public class day11 {
     }
 }
  */
+/*
 import java.util.HashMap;
 import java.util.Map;
 
@@ -25,10 +26,11 @@ public class day11 {
         person.put("ram", 89);
         person.put("jhon", 78);
         person.put("aravindh",67);
-        person.put("percent", 90);
+        person.put("vicky", 90);
 
         System.out.println(person.get("ram"));
         person.entrySet().forEach(entry ->
             System.out.println(entry.getKey() + " : " + entry.getValue()));
         }
     }
+*/

@@ -1,4 +1,4 @@
-
+/*
 public class day14 {
     static class Student {
         String name;
@@ -36,16 +36,15 @@ public class day14 {
             }
         }
     }
-
     public static void main(String[] args) {
         Student student = new Student.Builder()
-                .name("Gowtham")
+                .name("Sri")
                 .age(25)
                 .regNo(2131)
                 .build();
-
         System.out.println(student.name);
         System.out.println(student.age);
         System.out.println(student.regno);
     }
 }
+*/

@@ -1,13 +1,12 @@
 public class day15 {
-    static void main()throws InterruptedException{
-        Runnable chefTask = ()-> {
+    static void main() throws InterruptedException {
+        Runnable chefTask = () -> {
             String[] items = {"Poori", "Idly", "Briyani"};
             for (int i = 0; i < items.length; i++) {
-                System.out.println("Cooking Item: "+items[i]);
-                try{
+                System.out.println("Cooking Item: " + items[i]);
+                try {
                     Thread.sleep(2000);
-                }
-                catch (InterruptedException e){
+                } catch (InterruptedException e) {
                     throw new RuntimeException(e);
                 }
             }
